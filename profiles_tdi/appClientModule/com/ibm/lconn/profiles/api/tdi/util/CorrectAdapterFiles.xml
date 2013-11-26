@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright IBM Corp. 2010  All Rights Reserved.                    -->
+<PropertyStore name="profiles">
+	<Parser>
+		<Schema name="Input">
+			<InheritFrom>[parent]</InheritFrom>
+		</Schema>
+		<Schema name="Output">
+			<InheritFrom>[parent]</InheritFrom>
+		</Schema>
+	</Parser>
+	<RawConnector>
+		<UserComment />
+		<InheritFrom>system:/Connectors/ibmdi.Properties</InheritFrom>
+		<parameter name="collection">profiles_tdi.properties</parameter>
+		<parameter name="collectionType">Default</parameter>
+		<parameter name="debug">false</parameter>
+		<parameter name="userComment" />
+	</RawConnector>
+	<Key>key</Key>
+	<Value>value</Value>
+	<ReadOnly>false</ReadOnly>
+	<InitialLoad>true</InitialLoad>
+	<CacheTimeout>0</CacheTimeout>
+</PropertyStore>
